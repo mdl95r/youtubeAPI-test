@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Verdana;
+  font-size: 14px;
+}
+
+iframe {
+  display: block;
+  margin: 0 auto;
+}
+
+label {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 720px;
+  padding-top: 70px;
+  margin: 0 auto;
+}
+
+input[type="text"] {
+  width: 197px;
+  font-family: inherit;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 30px;
+}
+
+button {
+  font-family: inherit;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border: none;
+  background: #6c757d;
+  cursor: pointer;
+}
+
+.youtube-container {
+  position: relative;
+  height: 0;
+  padding: 0 0 56.25% 0;
+  overflow: hidden;
+}
+
+.youtube-container iframe,
+.youtube-container object,
+.youtube-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.radio-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.radio-wrap label:not(:last-child) {
+  margin-bottom: 20px;
+}

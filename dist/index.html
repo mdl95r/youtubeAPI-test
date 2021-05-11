@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.min.css">
+    <title>YouTube API Test</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="radio-wrap">
+          <label>Search by channel name
+            <input type="radio" name="search" id="radio01" checked>
+          </label>
+          <label>Search by channel identifier (id)
+            <input type="radio" name="search" id="radio02">
+          </label>
+        </div>
+        <input class="js-input" type="text" placeholder="Type channel name">
+        <button class="js-generate-video">Show video</button>
+      </div>
+      <div class="youtube-container"></div>
+      <script src="js/scripts-min.js"></script>
+    </div>
+  </body>
+</html>

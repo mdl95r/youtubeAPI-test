@@ -1,0 +1,20 @@
+doctype html
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		link(rel="stylesheet", href="css/main.min.css")
+		title YouTube API Test
+	body
+		.container
+			.wrapper
+				.radio-wrap
+					label Search by channel name
+						input(type="radio" name='search' id="radio01" checked)
+					label Search by channel identifier (id)
+						input(type="radio" name='search' id="radio02")
+				input.js-input(type="text" placeholder="Type channel name")
+				button.js-generate-video Show video
+			.youtube-container
+			script(src="js/scripts-min.js")
