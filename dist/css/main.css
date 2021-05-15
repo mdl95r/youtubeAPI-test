@@ -1,4 +1,4 @@
-* {
+*:not(ul) {
   padding: 0;
   margin: 0;
 }
@@ -6,6 +6,11 @@
 body {
   font-family: Verdana;
   font-size: 14px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 iframe {
@@ -63,10 +68,16 @@ button {
 }
 
 .youtube-container {
+  display: none;
   position: relative;
   height: 0;
   padding: 0 0 56.25% 0;
   overflow: hidden;
+}
+
+.youtube-container_show {
+  display: block;
+  margin-bottom: 20px;
 }
 
 .youtube-container iframe,
@@ -95,4 +106,19 @@ button {
 
 .radio-wrap label:not(:last-child) {
   margin-bottom: 20px;
+}
+
+.hint-wrap {
+  line-height: 24px;
+  padding-bottom: 20px;
+}
+
+.hint-wrap li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .hint-wrap {
+    padding: 15px;
+  }
 }

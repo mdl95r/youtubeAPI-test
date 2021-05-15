@@ -1,4 +1,4 @@
-* {
+*:not(ul) {
 	padding: 0;
 	margin: 0;
 }
@@ -6,6 +6,11 @@
 body {
 	font-family: Verdana;
 	font-size: 14px;
+}
+
+img {
+	display: block;
+	max-width: 100%;
 }
 
 iframe {
@@ -53,10 +58,15 @@ button {
 }
 
 .youtube-container {
+	display: none;
 	position:relative;
 	height:0;
 	padding: 0 0 56.25% 0;
 	overflow:hidden;
+	&_show {
+		display: block;
+		margin-bottom: 20px;
+	}
 }
 .youtube-container iframe,.youtube-container object,.youtube-container embed {
 	position:absolute;
@@ -76,12 +86,15 @@ button {
 			margin-bottom: 20px;
 		}
 	}
-	input {
-		// position: absolute;
-        // width: 1px;
-        // height: 1px; 
-        // overflow: hidden;
-        // clip: rect(1px, 1px, 1px, 1px);
-        // appearance: none;
+}
+
+.hint-wrap {
+	line-height: 24px;
+	padding-bottom: 20px;
+	@media (max-width: 768px) {
+		padding: 15px;
+	}
+	li:not(:last-child) {
+		margin-bottom: 10px;
 	}
 }

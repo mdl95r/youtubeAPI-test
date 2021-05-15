@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.min.css">
     <title>YouTube API Test</title>
@@ -11,17 +12,33 @@
     <div class="container">
       <div class="wrapper">
         <div class="radio-wrap">
-          <label>Search by channel name
+          <label>Поиск по названию канала
             <input type="radio" name="search" id="radio01" checked>
           </label>
-          <label>Search by channel identifier (id)
+          <label>Поиск по идентификатору канала (id)
             <input type="radio" name="search" id="radio02">
           </label>
         </div>
-        <input class="js-input" type="text" placeholder="Type channel name">
-        <button class="js-generate-video">Show video</button>
+        <input class="js-input" type="text" placeholder="Введите название канала">
+        <button class="js-generate-video">Показать видео</button>
       </div>
       <div class="youtube-container"></div>
+      <div class="hint-wrap"> 
+        <p>Иногда хочется посмотреть какое-нибудь случайное видео на любимом youTube канале. Я решил совместить приятное с полезным и создал небольшое приложение, в котором вбив название канала или id канала из адресной строки, вам будет показано случайное видео.</p>
+        <p>Как это сделать:</p>
+        <ul> 
+          <li>выбрать понравишийся канал</li>
+          <li>в адресной строке вы можете увидеть id канал, состоящий из букв и цифр<img src="https://mdl95-showcase.ml/files/Screenshot_8.png" alt></li>
+          <li>так же для некоторых каналов, можно искать по имени пользователя:<img src="https://mdl95-showcase.ml/files/Screenshot_9.png" alt></li>
+          <li>выбрать, как будет производиться поиск (по имени канала или по id) и нажать показать видео</li>
+        </ul>
+        <p>Возможные ситуации:
+          <ul>
+            <li>вы вбиваете имя канала, нажимаете "показать видео" но показывается сообщение "Проверьте название канала. Введено несуществующее название канала!", в этом случае лучше искать по id канала, это можно сделать выбрав любой канал в трее слева в подписках</li>
+          </ul>
+        </p>
+        <p>Второй вариант решения проблемы выше, это зайти в любое видео канала и кликнуть на канал</p>
+      </div>
       <script src="js/scripts-min.js"></script>
     </div>
   </body>
