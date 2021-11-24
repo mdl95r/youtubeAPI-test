@@ -7,12 +7,12 @@ const radioBtns = document.querySelectorAll('input[type="radio"]');
 
 window.onload = () => {
 	const savedID = localStorage.getItem('prev');
-	typeChannelId.value = savedID
+	typeChannelId.value = savedID;
 
 	const getRadio = localStorage.getItem('radioID');
 	if (getRadio) {
 		const activeRadio = document.getElementById(getRadio);
-		activeRadio.checked = true
+		activeRadio.checked = true;
 	}
 }
 
@@ -22,7 +22,7 @@ radioBtns.forEach(el => {
 		const prevResult = localStorage.getItem('prev');
 
 		if (typeChannelId.value !== '') {
-			typeChannelId.value = ''
+			typeChannelId.value = '';
 		}
 
 		if (radioID && prevResult) {
@@ -31,7 +31,7 @@ radioBtns.forEach(el => {
 		}
 
 		const activeRadio = checkActiveRadio();
-		activeRadio === 'radio01' ? typeChannelId.placeholder = 'Введите имя канала' : typeChannelId.placeholder = 'Введите id канала'
+		activeRadio === 'radio01' ? typeChannelId.placeholder = 'Введите имя канала' : typeChannelId.placeholder = 'Введите id канала';
 	})
 });
 
@@ -46,7 +46,7 @@ const fetching = (url) => {
 				return
 			}
 			if (!data.prevPageToken && !data.nextPageToken) {
-				const id = data.items[0].id
+				const id = data.items[0].id;
 				fetchingById(id);
 			} else {
 				processingData(data);
@@ -104,7 +104,7 @@ const getRandomVideo = (videos) => {
 }
 
 const showTemplate = (video) => {
-	const html = `<iframe src="https://www.youtube.com/embed/${video}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	<iframe src="https://www.youtube.com/embed/${video}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 	clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+	const html = `<iframe src="https://www.youtube.com/embed/${video}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
 	if (!youtubeContainer.classList.contains('youtube-container_show')) {
 		youtubeContainer.classList.add('youtube-container_show');
 	}
