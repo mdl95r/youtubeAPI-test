@@ -6,9 +6,9 @@
 
 - выбрать понравишийся канал
 - в адресной строке вы можете увидеть id канал, состоящий из букв и цифр
- ![enter image description here](https://mdl95-showcase.ml/files/Screenshot_8.png)
+ ![enter image description here](https://mdl95r.github.io/my-projects-storage/youtubeAPI-test/img/Screenshot_8.png)
 - так же для некоторых каналов, можно искать по имени пользователя:
- ![enter image description here](https://mdl95-showcase.ml/files/Screenshot_9.png)
+ ![enter image description here](https://mdl95r.github.io/my-projects-storage/youtubeAPI-test/img/Screenshot_9.png)
 - выбрать, как будет производиться поиск (по имени канала или по id) и нажать показать видео
 
 Возможные ситуации:
