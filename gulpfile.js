@@ -1,3 +1,4 @@
+const Path = require("path");
 const project_folder = "dist";
 const source_folder = "src";
 const components = "components";
@@ -182,6 +183,12 @@ function watchFiles() {
   gulp.watch([path.watch.svg], svg);
 }
 
+function copyStatic() {
+  const directoryName = Path.basename(__dirname);
+  console.log("\x1b[36m",`Project will be copied to the folder ${directoryName}`);
+  return gulp.src('dist/**').pipe(gulp.dest(`../my-projects-storage/${directoryName}`))
+}
+
 function clean() {
   return del(path.clean)
 }
@@ -195,6 +202,7 @@ exports.fonts = fonts;
 exports.css = css;
 exports.html = html;
 exports.pug = pug;
+exports.copyStatic = copyStatic;
 exports.svg = svg;
 exports.build = build;
 exports.watch = watch;

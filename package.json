@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "tests",
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "copy": "gulp copyStatic"
   },
   "author": ".mdl",
   "license": "ISC",
